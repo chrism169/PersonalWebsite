@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        #background-video{
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+}
+    </style>
+    <meta charset="utf-8" />
+    <title>Christian Moore</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+</head>
+<body>
+    <video id="background-video" autoplay loop muted poster="poster.png">
+        <source src="bgvidtest.mp4" type="video/mp4">
+    </video>
+    
+    <img src="logo.png" alt="Christian Moore Logo">
+    <img src="sub.png" alt="Sublogo">
+<div class=button_container>
+    <a href="https://www.christianmoo.re/resume.pdf" target="_blank">
+        <button class="button">resume</button>
+    </a>
+    <a href="https://www.github.com/Chrism169" target="_blank">
+        <button class="button">github</button>
+    </a>
+    <a href="https://www.linkedin.com/in/christianmoore208" target="_blank">
+        <button class="button">linkedin</button>
+    </a>
+</div>
+</body>
+</html>
