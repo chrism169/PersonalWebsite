@@ -39,42 +39,40 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/vendors/easings.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
-
+<body>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            licenseKey: 'gplv3-license'
+            });
+    </script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage();
         });
     </script>
-
-<body>
     <video id="background-video" autoplay loop muted poster="assets/poster.png">
-        <source data-src="assets/bgvid.mp4" type="video/mp4">
+        <source src="assets/city.mp4" type="video/mp4">
     </video>
     <div id="fullpage">
-            <div class="section" id="section0">
-            <!--<img src="assets/logo.png" alt="Christian Moore Logo">
-            <img src="assets/sub.png" alt="Sublogo"> this may get removed if i move towards text based logo and away from img based -->
-            <div class=button_container>
+            <div class="section" id="section0" style="text-align: center;">
+                <div><img src="assets/logo.png" alt="Christian Moore Logo" width="350px"></div>
+                <div><img src="assets/sub.png" alt="Sublogo" width="1019px"></div>
                 <a href="https://www.christianmoo.re/resume.pdf" target="_blank">
-                    <button class="button">resume</button>
+                    <button class="button">resume</button> 
                 </a>
                 <a href="https://www.github.com/Chrism169" target="_blank">
                     <button class="button">github</button>
                 </a>
-                <a href="https://ww.linkedin.com/in/christianmoore208" target="_blank">
+                <a href="https://www.linkedin.com/in/christianmoore208" target="_blank">
                     <button class="button">linkedin</button>
                 </a>
             </div>
-                </div>
-        <div class="section" id="section1">Work on Madden 20 and Frostbite Engine
+        <div class="section" id="section1" style=>
+        
         </div>
         <div class="section" id="section2">Broncomputer ?
-
         </div>
     </div>
-<script type="text/javascript">
-var myFullpage = new fullpage('#fullpage', {
-	});
-</script>
+</div>
 </body>
 </html>

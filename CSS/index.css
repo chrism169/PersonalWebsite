@@ -9,6 +9,18 @@
     bottom: 0;
     z-index: -1;
 }
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#sublogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .center{
     height: 1250px;
     display: flex;
@@ -32,13 +44,13 @@ body{
 }
 
 button{
-  padding: 25px 30px;
+  padding: 10px 15px;
   background-color: #050801;
   color: #ffffff;
   font-weight: bold;
   border: none;
-  border-radius: 5px;
-  letter-spacing: 4px;
+  border-radius: 5px; 
+  letter-spacing: 0px;  
   overflow: hidden;
   transition: 0.5s;
   cursor: pointer;
@@ -46,14 +58,20 @@ button{
   margin-right: 5px;
   justify-content: center;
   align-items: center;
+
 }
 
 button:hover{
-    background: #01582f;
+    background: #580149;  line-height: 0.3em;
+    padding-bottom: 17px;
     color: #ffffff;
-    box-shadow: 0 0 5px #01582f,
-                0 0 25px #01582f,
-                0 0 50px #01582f,
-                0 0 200px #01582f;
+    box-shadow: 0 0 5px #580149,
+                0 0 25px #580149,
+                0 0 50px #580149,
+                0 0 200px #580149;
      -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+#madden{
+    display: flex;
+    align-items: start;
 }
