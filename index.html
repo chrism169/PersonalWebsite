@@ -27,48 +27,53 @@
             bottom: 0;
             z-index: -1;
 }
+
+
     </style>
+    
     <meta charset="utf-8" />
     <title>Christian Moore</title>
     <link rel="stylesheet" href="CSS/index.css">
     <!-- Fullscreen Files -->
-    <link rel="stylesheet" type="text/css" href="fullpage.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/fullview.js"></script>
-</head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/vendors/easings.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage();
+        });
+    </script>
+
 <body>
     <video id="background-video" autoplay loop muted poster="assets/poster.png">
-        <source src="assets/bgvid.mp4" type="video/mp4">
+        <source data-src="assets/bgvid.mp4" type="video/mp4">
     </video>
     <div id="fullpage">
-        <div class="section">Some section
-            <img src="assets/logo.png" alt="Christian Moore Logo">
-            <img src="assets/sub.png" alt="Sublogo">
-        <div class=button_container>
-            <a href="https://www.christianmoo.re/resume.pdf" target="_blank">
-                <button class="button">resume</button>
-            </a>
-            <a href="https://www.github.com/Chrism169" target="_blank">
-                <button class="button">github</button>
-            </a>
-            <a href="https://www.linkedin.com/in/christianmoore208" target="_blank">
-                <button class="button">linkedin</button>
-            </a>
+            <div class="section" id="section0">
+            <!--<img src="assets/logo.png" alt="Christian Moore Logo">
+            <img src="assets/sub.png" alt="Sublogo"> this may get removed if i move towards text based logo and away from img based -->
+            <div class=button_container>
+                <a href="https://www.christianmoo.re/resume.pdf" target="_blank">
+                    <button class="button">resume</button>
+                </a>
+                <a href="https://www.github.com/Chrism169" target="_blank">
+                    <button class="button">github</button>
+                </a>
+                <a href="https://ww.linkedin.com/in/christianmoore208" target="_blank">
+                    <button class="button">linkedin</button>
+                </a>
+            </div>
+                </div>
+        <div class="section" id="section1">Work on Madden 20 and Frostbite Engine
         </div>
-        </div>
-        <div class="section">Some section
-
-        </div>
-        <div class="section">Some section
-
-        </div>
-        <div class="section">Some section
+        <div class="section" id="section2">Broncomputer ?
 
         </div>
     </div>
 <script type="text/javascript">
 var myFullpage = new fullpage('#fullpage', {
-		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
 	});
 </script>
 </body>

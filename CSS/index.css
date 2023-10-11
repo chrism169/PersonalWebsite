@@ -1,5 +1,4 @@
-﻿body {
-#background-video{
+﻿#background-video{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -57,5 +56,4 @@ button:hover{
                 0 0 50px #01582f,
                 0 0 200px #01582f;
      -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-}
 }
