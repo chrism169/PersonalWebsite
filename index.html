@@ -2,6 +2,13 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!--jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- End jQuery -->
+
+<!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- End Boostrap -->
     <style>
         body, html {
             height: 100%;
@@ -26,37 +33,21 @@
             top: 0;
             bottom: 0;
             z-index: 0;
-}
-
-
+}    
     </style>
     
     <meta charset="utf-8" />
     <title>Christian Moore</title>
     <link rel="stylesheet" href="CSS/index.css">
-    <!-- Fullscreen Files -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/vendors/easings.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
-<body>
-    <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            licenseKey: 'gplv3-license'
-            });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage();
-        });
-    </script>
+
     <video id="background-video" autoplay loop muted poster="assets/poster.png">
         <source src="assets/city.mp4" type="video/mp4">
     </video>
     <div id="fullpage">
+        <!-- Begin Splash Page -->
             <div class="section" id="section0" style="text-align: center;">
-                <div><img src="assets/logo.png" alt="Christian Moore Logo" width="350px"></div>
-                <div><img src="assets/sub.png" alt="Sublogo" width="1019px"></div>
+                <div><img src="assets/logo.png" alt="Christian Moore Logo" width="550px"></div>
+                <div><img src="assets/sub.png" alt="Sublogo" width="1275px"></div>
                 <a href="https://www.christianmoo.re/resume.pdf" target="_blank">
                     <button class="button">resume</button> 
                 </a>
@@ -67,12 +58,92 @@
                     <button class="button">linkedin</button>
                 </a>
             </div>
-        <div class="section" id="section1" style=>
-        
+        <!-- End Splash Page -->
+        <!-- Begin M19 -->
+        <div class="section" id="section1">
+            <article class="postcard dark red">
+                <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src="assets/video.png" alt="Image Title" />	
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title red"><img src="assets/madden.png" alt="Work on Madden 19 and the Frostbite Engine" width="1300px"></h1>
+                    <div class="postcard__subtitle small">
+                        <time datetime="2020-05-25 12:00:00">
+                            <i class="fas fa-calendar-alt mr-2"></i>2019-2020
+                        </time>
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                    <ul class="postcard__tagbox">
+                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>FFMPEG</li>
+                        <li class="tag__item"><i class="fas fa-clock mr-2"></i>Frosty Editor</li>
+                        <li class="tag__item"><i class="fas fa-clock mr-2"></i>Photoshop</li>
+                        <li class="tag__item play red">
+                            <a href="https://www.youtube.com/watch?v=yZihQl4THiU" target="_blank"><i class="fas fa-play mr-2"></i>Tutorial On Changing Video Files</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
         </div>
-        <div class="section" id="section2">Broncomputer ?
+        <!-- End M19 -->
+        <!-- Begin Zone -->
+        <div class="section" id="section2">
+            <article class="postcard dark red">
+                <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />	
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title red"><img src="assets/zt.png" alt="Zone Technician at Boise State University" width="1300px"></h1>
+                    <div class="postcard__subtitle small">
+                        <time datetime="2020-05-25 12:00:00">
+                            <i class="fas fa-calendar-alt mr-2"></i>2022-Now
+                        </time>
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                    <ul class="postcard__tagbox">
+                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>Educational IT Support</li>
+                        <li class="tag__item"><i class="fas fa-clock mr-2"></i>Active Directory</li>
+                        <li class="tag__item"><i class="fas fa-clock mr-2"></i>ServiceNow</li>
+                        <li class="tag__item"><i class="fas fa-clock mr-2"></i>ITIL</li>
+                    </ul>
+                </div>
+            </article>
         </div>
+        <!--End Zone -->
     </div>
 </div>
+<!-- Calling Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- End Boostrap Call-->
+
+<!-- Begin Fullscreen -->
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/vendors/easings.min.js"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+<body>
+ <script type="text/javascript">
+     var myFullpage = new fullpage('#fullpage', {
+         licenseKey: 'gplv3-license'
+         });
+ </script>
+ <script type="text/javascript">
+     $(document).ready(function() {
+         $('#fullpage').fullpage();
+     });
+ </script>
+<!-- End Fullscreen-->
+
+<!-- Begin Plyr-->
+<script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+<script>
+ document.addEventListener('DOMContentLoaded', () => {
+   const controls = [
+     'mute',
+   ];
+   const player = Plyr.setup('.video', { controls, muted: true  });
+ });
+</script>
+<!--End Plyr-->
 </body>
 </html>
